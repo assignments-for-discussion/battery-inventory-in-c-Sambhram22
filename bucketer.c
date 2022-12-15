@@ -12,6 +12,18 @@ struct CountsByUsage countBatteriesByUsage(const int* cycles, int nBatteries) {
   return counts;
 }
 
+int countBatteriesByUsage(chargeCycleCounts, numberofBatteries)
+{
+  const int chargeCycleCounts[] = {100, 300, 500, 600, 900, 1000};
+  const int numberOfBatteries = sizeof(chargeCycleCounts) / sizeof(chargeCycleCounts[0]);
+  if (counts<310)
+    lowCount++;
+  if (counts>310 && counts<929)
+    mediumCount++;
+  if (counts>930)
+    highCount++;
+} 
+
 void testBucketingByNumberOfCycles() {
   const int chargeCycleCounts[] = {100, 300, 500, 600, 900, 1000};
   const int numberOfBatteries = sizeof(chargeCycleCounts) / sizeof(chargeCycleCounts[0]);
